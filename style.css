@@ -1,0 +1,191 @@
+html,
+body {
+    background-color: #181f42;
+    font-family: "Press Start 2P";
+    padding: 0 0;
+    margin: 0 0;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    position: relative;
+}
+
+.title h1 {
+    position: relative;
+    text-shadow: 10px 10px #535f8c;
+
+    font-size: 7vw;
+    cursor: default;
+    color: #535f8c;
+    color: white;
+    background-color: transparent;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100vh;
+    box-shadow: 0vh 1vh #130f29;
+}
+
+.downloadButton {
+    background: url(./resources/download-button.png) no-repeat;
+    background-size: round, auto;
+    padding: 0;
+    border: none;
+    color: transparent;
+    width: 120px;
+    height: 120px;
+}
+
+.downloadButton:hover {
+    background: url(./resources/download-button-hover.png) no-repeat;
+}
+
+.downloadButton:active {
+    background: url(./resources/download-button-pressed.png) no-repeat;
+}
+
+.topnav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.topnav > li {
+    transition: color 0.2s ease-in;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    background-size: auto, round;
+}
+
+.topnav > li > a {
+    color: transparent;
+    width: clamp(200px, 10vw, 100%);
+    background-color: transparent;
+}
+
+.homeButton {
+    background: url(./resources/Home_button.png) no-repeat;
+    background-size: round auto;
+}
+
+.trailerButton {
+    background: url(./resources/Trailer_button.png) no-repeat;
+}
+
+.aboutButton {
+    background: url(./resources/About_button.png) no-repeat;
+}
+
+.homeButton:active {
+    background: url(./resources/Home_button_pressed.png) no-repeat;
+}
+
+.trailerButton:active {
+    background: url(./resources/Trailer_button_pressed.png) no-repeat;
+}
+
+.aboutButton:active {
+    background: url(./resources/About_button_pressed.png) no-repeat;
+}
+
+.part1 {
+    background-color: #444e75;
+    box-shadow: 0vh 1vh #130f29;
+}
+
+section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trailer {
+    width: clamp(10px, 100vw, 1200px);
+    padding-bottom: 15vh;
+}
+
+.trailer div {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about h2 {
+    color: white;
+    text-shadow: 7px 7px #535f8c;
+    padding-top: 10vh;
+    font-size: clamp(10px, 5vw, 48px);
+    display: flex;
+    justify-content: center;
+}
+
+.trailer h2 {
+    color: white;
+    text-shadow: 7px 7px #181f42;
+    padding-top: 10vh;
+    font-size: clamp(10px, 5vw, 48px);
+}
+
+.about {
+    margin-top: 1vh;
+    height: 70vh;
+    background-color: #181f42;
+    width: clamp(10px, 100vw, 1200px);
+}
+
+.about > div {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about > div > h4 {
+    color: #535f8c;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
