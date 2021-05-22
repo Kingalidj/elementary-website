@@ -189,6 +189,8 @@ section {
 
 .about > div > h4 {
     color: #535f8c;
+    hyphens: auto; 
+	text-align: justify
 }
 
 .iframe-container {
@@ -231,6 +233,8 @@ section {
     margin-top: 1vh;
     color: #181f42;
     width: clamp(10px, 100vw, 1200px);
+    hyphens: auto; 
+	text-align: justify
 }
 
 .footer {
