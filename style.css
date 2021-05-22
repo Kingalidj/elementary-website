@@ -19,9 +19,23 @@ body {
 
 .title h1 {
     position: relative;
+    margin-top: 0;
     text-shadow: 10px 10px #535f8c;
 
     font-size: 7vw;
+    cursor: default;
+    color: #535f8c;
+    color: white;
+    background-color: transparent;
+}
+
+.title h3 {
+    position: relative;
+    text-shadow: 3px 0 #9badb7, 3px 0 #9badb7, 3px 0 #9badb7, 3px 0 #9badb7;
+    text-shadow: 5px 5px #9badb7;
+    top: -2vh;
+
+    font-size: 3vw;
     cursor: default;
     color: #535f8c;
     color: white;
@@ -133,9 +147,18 @@ section {
     flex-direction: column;
 }
 
-.about h2 {
+.about > h2 {
     color: white;
     text-shadow: 7px 7px #535f8c;
+    padding-top: 10vh;
+    font-size: clamp(10px, 5vw, 48px);
+    display: flex;
+    justify-content: center;
+}
+
+.us > h2 {
+    color: white;
+    text-shadow: 7px 7px #181f42;
     padding-top: 10vh;
     font-size: clamp(10px, 5vw, 48px);
     display: flex;
@@ -161,6 +184,7 @@ section {
     justify-content: center;
     margin-left: 10%;
     margin-right: 10%;
+    line-height: 30px;
 }
 
 .about > div > h4 {
@@ -179,6 +203,43 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.part2 {
+    box-shadow: 0vh 1vh #130f29;
+}
+
+.part3 {
+    margin-top: 1vh;
+    padding-top: 3vh;
+    background-color: #535f8c;
+}
+
+.us {
+    width: clamp(10px, 100vw, 1200px);
+}
+
+.us > div {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 30px;
+}
+
+.us > div > h4 {
+    margin-top: 1vh;
+    color: #181f42;
+    width: clamp(10px, 100vw, 1200px);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+    background-color: #535f8c;
+    width: 100vw;
+    color: white;
 }
 
 .unselectable {
